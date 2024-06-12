@@ -1,5 +1,6 @@
 ALL_AGENTS = ["yoru", "astra", "killjoy", "omen", "raze", "reyna", "sage", "skye",
-              "cypher", "jett", "breach", "brimstone", "kayo", "viper", "sova", "phoenix", "neon",]
+              "cypher", "jett", "breach", "brimstone", "kayo", "viper", "sova", "phoenix", 
+              "neon", "fade", "harbor", "gekko", "deadlock", "iso", "clove"]
 # TEMPLATE_CROP_COORDINATES = {"y_start":0,"y_end":33,"x_start":0,"x_end":100}
 # FRAME_CROP_COORDINATES = {"y_start":107,"y_end":144,"x_start":1235,"x_end":1898}
 # KILL_FEED_JUMP_HEIGHT = 43
@@ -221,9 +222,13 @@ corematch_example = {
     }
 }
 
-agents_ultimate_points = {"phoenix": 6, "jett": 6, "viper": 7,
-                          "sova": 7, "cypher": 7, "omen": 7,
-                          "raze": 6, "breach": 7, "sage": 7,
-                          "brimstone": 6, "reyna": 6, "killjoy": 7,
-                          "astra": 7, "yoru": 6, "kayo": 7,
-                          "skye": 7,"chamber":7, "neon": 7,}
+agents_ultimate_points = {"phoenix": 6, "jett": 8, "viper": 9,
+                          "sova": 8, "cypher": 6, "omen": 7,
+                          "raze": 8, "breach": 9, "sage": 8,
+                          "brimstone": 8, "reyna": 6, "killjoy": 9,
+                          "astra": 7, "yoru": 7, "kayo": 8,
+                          "skye": 8,"chamber": 8, "neon": 7, "fade": 8, 
+                          "harbor": 7, "gekko": 7, "deadlock": 7, "iso": 7,
+                          "clove": 8}
+
+# "fade", "harbor", "gekko", "deadlock", "iso", "clove"
