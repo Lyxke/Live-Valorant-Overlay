@@ -20,7 +20,7 @@ warnings.filterwarnings("ignore")
 class LiveDetails():
     def __init__(self):
         # get score from in-game api- discard ocr below
-        # self.score_helper = GetScore()
+        self.score_helper = GetScore()
         self.spike_helper = GetSpike()
         self.shield_helper = GetShields()
         self.loadout_helper = GetLoadouts()
@@ -34,7 +34,7 @@ class LiveDetails():
 
     def get_live_details(self, frame):
         # get score from in-game api- discard ocr below
-        # score = self.score_helper.get_score(frame)
+        score = self.score_helper.get_score(frame)
 
         agents_health = self.health_helper.get_health(frame)
         agents_health["blue"] = agents_health["left"]
@@ -56,10 +56,10 @@ class LiveDetails():
             agents_with_loadouts_shields = list(
                 zip(scoreboard_agents["top"], loadouts["top"], shields["top"], agents_ultimate_points["top"]))
 
-            return({"score": "score", "spike_status": spike_status,
+            return({"score": score, "spike_status": spike_status,
                     "agents_with_loadouts_shields": agents_with_loadouts_shields,
                     "alive_agents": header_agents, "health_values": agents_health})
-        return({"score": "score", "spike_status": spike_status,
+        return({"score": score, "spike_status": spike_status,
                 "alive_agents": header_agents, "health_values": agents_health})
 
 

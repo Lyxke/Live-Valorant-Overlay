@@ -30,7 +30,7 @@ class GetScore():
         else:
             return [left_score[0][1], right_score[0][1]]
 
-# if __name__ == '__main__':
-#     score_helper = GetScore()
-#     image = cv2.imread("Tab Images/3.png")
-#     print(score_helper.get_score(image))
+if __name__ == '__main__':
+    score_helper = GetScore()
+    image = cv2.imread("Tab Images/3.png")
+    print(score_helper.get_score(image))
